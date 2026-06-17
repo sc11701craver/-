@@ -21,19 +21,6 @@ GitHub Actions (매월 1일 + 수동)
 
 ---
 
-## 배포 방법 (최초 1회, 약 5분)
-
-1. **이 폴더를 GitHub 저장소에 푸시** (`index.html`, `data/`, `etl.py`, `.github/workflows/update.yml` 포함).
-2. 저장소 **Settings → Pages → Build and deployment → Source: GitHub Actions** 선택.
-3. **Actions 탭 → "Update & Deploy dashboard" → Run workflow** 로 즉시 1회 배포.
-4. 배포 완료 후 `https://<사용자명>.github.io/<저장소명>/` 이 공유 링크입니다.
-
-→ 받는 사람은 링크 클릭 한 번으로 접속하며, 소스코드는 다룰 필요가 없습니다.
-   (사이트에는 `index.html`과 `data/`만 배포되어 `etl.py` 등 코드는 페이지로 노출되지 않습니다.
-   단, **저장소가 public이면 코드는 GitHub에서 보입니다** — 코드도 비공개로 하려면 private 저장소 + Pages 권한을 사용하세요.)
-
----
-
 ## 실제(라이브) 데이터로 갱신하려면
 
 키가 없으면 매월 **시드 데이터**가 그대로 재배포됩니다(항상 정상 작동). 실제 공시 수치로 채우려면:
